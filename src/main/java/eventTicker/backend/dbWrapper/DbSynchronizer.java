@@ -40,8 +40,8 @@ public class DbSynchronizer {
 	protected URL usersUrl;
 	protected URL matchUrl;
 
-	protected BeanItemContainer eventContainer = new BeanItemContainer<>(ConcreteEvent.class);
-	protected BeanItemContainer userContainer = new BeanItemContainer<>(ConcreteUser.class);
+	protected BeanItemContainer<ConcreteEvent> eventContainer = new BeanItemContainer<>(ConcreteEvent.class);
+	protected BeanItemContainer<ConcreteUser> userContainer = new BeanItemContainer<>(ConcreteUser.class);
 
 	public static BeanItemContainer deletedEventContainer = new BeanItemContainer<>(ConcreteEvent.class);
 	protected BeanItemContainer deletedUserContainer = new BeanItemContainer<>(ConcreteUser.class);

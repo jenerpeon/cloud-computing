@@ -1,19 +1,12 @@
 
 package eventTicker;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.ViewChangeListener;
-import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
-import com.vaadin.server.ServiceException;
-import com.vaadin.server.SessionDestroyEvent;
-import com.vaadin.server.SessionDestroyListener;
-import com.vaadin.server.SessionInitEvent;
-import com.vaadin.server.SessionInitListener;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Alignment;
@@ -28,7 +21,6 @@ import eventTicker.views.UserView;
 
 @Theme("valo")
 @SuppressWarnings("serial")
-// @ComponentScan
 public class EventTickerApplication extends UI {
 
 	private AccountingSessionKeys keys = AccountingSessionKeys.getInstance();
